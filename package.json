@@ -1,0 +1,21 @@
+{
+  "name": "sustainability-intelligence-platform",
+  "version": "1.0.0",
+  "description": "A platform for smart supply chains to monitor, analyze, and improve sustainability metrics using AI-driven insights.",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=dist/index.js --define:process.env.API_KEY=\\\"\"$API_KEY\"\\\" --jsx=react-jsx --loader:.ts=tsx --platform=browser --format=esm --external:react --external:react-dom/* --external:react/* --external:@google/genai --external:recharts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sustainability",
+    "ai",
+    "supply-chain",
+    "gemini"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.23.0"
+  }
+}
